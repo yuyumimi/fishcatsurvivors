@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Cat Survivors - Addictive Online Cat Fishing Game</title>
+    <meta name="description" content="Play Fish Cat Survivors online - A fun cat fishing adventure where you collect fish and upgrade your abilities to survive as long as possible!">
+    <meta name="keywords" content="Fish Cat Survivors, cat game, fishing game, online game, casual game">
+    <link rel="canonical" href="https://fishcatsurvivors.online">
+    
+    <!-- OG Meta Tags for social sharing -->
+    <meta property="og:title" content="Fish Cat Survivors - Addictive Online Cat Fishing Game">
+    <meta property="og:description" content="Control a cute cat to catch fish and survive in this addictive online game. Play now for free!">
+    <meta property="og:url" content="https://fishcatsurvivors.online">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#007AFF',
+                        'apple-green': '#34C759',
+                        'apple-pink': '#FF2D55',
+                        'apple-purple': '#AF52DE',
+                        'apple-orange': '#FF9500',
+                        'apple-yellow': '#FFCC00',
+                        'apple-gray': '#8E8E93',
+                        'apple-gray-light': '#E5E5EA',
+                        'apple-dark': '#1C1C1E',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom styles to ensure iframe responsiveness */
+        .game-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            width: 100%;
+        }
+        
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        @media (max-width: 640px) {
+            .game-container {
+                padding-top: 75%; /* Adjusts aspect ratio for mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-apple-dark text-gray-800 dark:text-white">
+    <header class="bg-gradient-to-r from-apple-blue to-apple-purple py-4 md:py-6">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <a href="/" class="text-white font-bold text-xl md:text-2xl">Fish Cat Survivors</a>
+                <div class="hidden md:block">
+                    <a href="#game" class="text-white mx-2 hover:text-apple-yellow transition">Play Now</a>
+                    <a href="#about" class="text-white mx-2 hover:text-apple-yellow transition">About</a>
+                    <a href="#tips" class="text-white mx-2 hover:text-apple-yellow transition">Tips</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-apple-blue">Fish Cat Survivors</h1>
+            <p class="text-xl md:text-2xl mb-6 text-apple-gray-dark max-w-3xl mx-auto">Control your cat, catch fish, and survive as long as possible in this addictive adventure!</p>
+            <div class="inline-block bg-apple-green hover:bg-opacity-90 transition text-white font-semibold py-3 px-8 rounded-full shadow-lg animate-pulse">
+                <a href="#game" class="text-white text-lg">Play Now!</a>
+            </div>
+        </section>
+
+        <section id="game" class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-apple-pink">Play Fish Cat Survivors Online</h2>
+            <div class="game-container shadow-xl rounded-lg overflow-hidden">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/fishcat-survivors/index-og.html" class="responsive-iframe" allowfullscreen></iframe>
+            </div>
+            <div class="mt-4 text-center text-sm text-apple-gray">
+                <p>For the best experience, play in fullscreen mode</p>
+            </div>
+        </section>
+
+        <section id="about" class="mb-16 grid md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-apple-orange">About Fish Cat Survivors</h2>
+                <p class="mb-4">Fish Cat Survivors is an addictive online game where you control a cute cat character in a water world filled with fish and dangers. Your goal is to survive as long as possible by collecting fish and avoiding obstacles.</p>
+                <p class="mb-4">As you progress, you'll unlock special abilities and upgrades that help your cat become stronger and more resilient. The game combines casual gameplay with strategic elements, making it perfect for players of all ages.</p>
+                <p>The colorful graphics and simple controls make Fish Cat Survivors easy to learn but challenging to master. How long can you survive?</p>
+            </div>
+            <div class="bg-apple-gray-light dark:bg-apple-dark p-6 rounded-lg">
+                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-apple-purple">Game Features</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Simple one-touch controls</li>
+                    <li>Collect fish to gain points and upgrades</li>
+                    <li>Unlock special abilities as you progress</li>
+                    <li>Avoid obstacles and enemies</li>
+                    <li>Compete for high scores</li>
+                    <li>Adorable cat character and colorful graphics</li>
+                    <li>Works on both desktop and mobile devices</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tips" class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-apple-green">Tips & Strategies</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-apple-dark p-6 rounded-lg shadow-md border border-apple-gray-light">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-blue">Beginner Tips</h3>
+                    <p>Focus on collecting small fish first to build up your strength. Don't try to go after the bigger fish until you've upgraded your abilities. Stay away from dangerous areas and keep moving.</p>
+                </div>
+                <div class="bg-white dark:bg-apple-dark p-6 rounded-lg shadow-md border border-apple-gray-light">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-pink">Intermediate Strategies</h3>
+                    <p>Prioritize speed upgrades early in the game, then focus on strength. Learn the patterns of enemy movements. Time your special abilities for maximum effect during challenging situations.</p>
+                </div>
+                <div class="bg-white dark:bg-apple-dark p-6 rounded-lg shadow-md border border-apple-gray-light">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-orange">Advanced Techniques</h3>
+                    <p>Master the art of quick direction changes to avoid enemies. Plan your upgrade path based on your playstyle. Learn to predict where the best fish will appear and position yourself accordingly.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2023 Fish Cat Survivors. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-apple-gray-light hover:text-apple-blue transition">Privacy Policy</a>
+                    <a href="#" class="text-apple-gray-light hover:text-apple-blue transition">Terms of Service</a>
+                    <a href="#" class="text-apple-gray-light hover:text-apple-blue transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to handle smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
