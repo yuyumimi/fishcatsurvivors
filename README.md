@@ -27,7 +27,7 @@ This website hosts a curated collection of high-quality roguelike games, providi
 ## Game Collection
 
 Currently featuring:
-1. **Classic Dungeon Crawler** - Traditional roguelike experience
+1. **Vampire Survivors** - Gothic horror survival game with rogue-lite elements
 2. **Pixel Kingdom** - Retro pixel art adventure
 3. **Shadow Realms** - Dark fantasy exploration
 4. **Crystal Caves** - Mining and exploration
