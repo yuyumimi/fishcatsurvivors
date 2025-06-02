@@ -30,6 +30,7 @@ Currently featuring:
 1. **Classic Roguelike Adventure** - Traditional dungeon crawler with procedural generation and permadeath
 2. **Darkness Survivors** - Survive against endless waves of dark creatures
 3. **Monster Survivors** - Battle hordes of monsters in Unity-powered survival arena
+4. **Dragonsweeper** - Roguelike minesweeper with tactical depth and fantasy setting
 
 ## Project Structure
 
