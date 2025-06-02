@@ -28,9 +28,11 @@ This website hosts a curated collection of high-quality roguelike games, providi
 
 Currently featuring:
 1. **Classic Roguelike Adventure** - Traditional dungeon crawler with procedural generation and permadeath
-2. **Pixel Kingdom** - Retro pixel art adventure
-3. **Shadow Realms** - Dark fantasy exploration
-4. **Crystal Caves** - Mining and exploration
+2. **Darkness Survivors** - Survive against endless waves of dark creatures
+3. **Monster Survivors** - Battle hordes of monsters in Unity-powered survival arena
+4. **Pixel Kingdom** - Retro pixel art adventure
+5. **Shadow Realms** - Dark fantasy exploration
+6. **Crystal Caves** - Mining and exploration
 
 ## Project Structure
 
