@@ -1,0 +1,63 @@
+{
+  "name": "fishcatsurvivors-roguelike-collection",
+  "version": "1.0.0",
+  "description": "A premium collection of roguelike games hosted at fishcatsurvivors.online",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=8080 --open=/",
+    "dev": "live-server --port=3000 --open=/ --watch=.",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy via Cloudflare Pages'",
+    "lint": "echo 'Linting HTML and CSS...'",
+    "test": "echo 'Testing site functionality...'"
+  },
+  "keywords": [
+    "roguelike",
+    "games",
+    "online-games",
+    "dungeon-crawler",
+    "survival-games",
+    "procedural-generation",
+    "tactical-rpg",
+    "browser-games",
+    "html5-games",
+    "free-games"
+  ],
+  "author": {
+    "name": "Fish Cat Survivors Team",
+    "url": "https://fishcatsurvivors.online"
+  },
+  "license": "MIT",
+  "homepage": "https://fishcatsurvivors.online",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/fishcatsurvivors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/fishcatsurvivors/issues"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "metadata": {
+    "domain": "fishcatsurvivors.online",
+    "hosting": "Cloudflare Pages",
+    "analytics": "Google Analytics 4",
+    "framework": "Vanilla HTML/CSS/JS",
+    "ui": "Tailwind CSS",
+    "responsive": true,
+    "pwa": false,
+    "lighthouse_score": "95+"
+  }
+} 

@@ -7,15 +7,22 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-BZMC3MEW4T');
     </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fish Cat Survivors - Exciting Online Adventure Game</title>
-    <meta name="description" content="Play Fish Cat Survivors online for free! Join the adventure of a brave cat surviving in a fish-filled world. Fun gameplay for all ages.">
-    <meta name="keywords" content="Fish Cat Survivors, online game, adventure game, cat game, fish game, survival game">
+    <title>Roguelike Games Collection - Fish Cat Survivors Online</title>
+    <meta name="description" content="Play the best roguelike games online for free! Experience challenging dungeon crawlers, procedural adventures, and tactical survival games. Updated daily with new roguelike classics.">
+    <meta name="keywords" content="roguelike games, online roguelike, dungeon crawler, procedural generation, tactical RPG, survival games, free online games, roguelike collection">
     <link rel="canonical" href="https://fishcatsurvivors.online/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Roguelike Games Collection - Fish Cat Survivors Online">
+    <meta property="og:description" content="Play the best roguelike games online for free! Experience challenging dungeon crawlers and procedural adventures.">
+    <meta property="og:url" content="https://fishcatsurvivors.online/">
+    <meta property="og:type" content="website">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,114 +30,404 @@
                 extend: {
                     colors: {
                         apple: {
-                            blue: '#0071e3',
-                            gray: '#f5f5f7',
-                            darkgray: '#86868b',
-                            black: '#1d1d1f'
+                            blue: '#007AFF',
+                            lightblue: '#5AC8FA',
+                            gray: '#F2F2F7',
+                            lightgray: '#E5E5EA',
+                            darkgray: '#8E8E93',
+                            black: '#1C1C1E',
+                            white: '#FFFFFF'
                         }
+                    },
+                    fontFamily: {
+                        'apple': ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-    <style type="text/tailwind">
-        @layer base {
-            body {
-                @apply bg-apple-gray text-apple-black font-sans;
-            }
-            h1 {
-                @apply text-4xl md:text-5xl font-bold mb-4;
-            }
-            h2 {
-                @apply text-2xl md:text-3xl font-semibold mb-3 mt-6;
-            }
-            p {
-                @apply mb-4 text-base md:text-lg;
-            }
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        canvas {
-            width: 1024px;
-            height: 768px;
+        
+        .game-card {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .game-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 122, 255, 0.15);
+        }
+        
+        .sidebar-item {
+            transition: all 0.2s ease;
+        }
+        
+        .sidebar-item:hover {
+            background-color: rgba(0, 122, 255, 0.1);
+            transform: translateX(4px);
+        }
+        
+        .sidebar-item.active {
+            background-color: #007AFF;
+            color: white;
+        }
+        
+        .game-iframe {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .sidebar.open {
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
-<body>
-    <header class="bg-apple-blue text-white py-4 shadow-md">
-        <div class="container mx-auto px-4 md:px-8">
-            <nav class="flex justify-between items-center">
-                <div class="text-xl md:text-2xl font-bold">Fish Cat Survivors</div>
-                <div class="text-sm md:text-base">Play Anywhere, Anytime</div>
-            </nav>
+<body class="bg-apple-gray text-apple-black">
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="md:hidden fixed top-4 left-4 z-50 bg-apple-blue text-white p-2 rounded-lg shadow-lg">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-apple-lightgray sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-gradient-to-br from-apple-blue to-apple-lightblue rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold">🎮</span>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold text-apple-black">Roguelike Games Collection</h1>
+                </div>
+                <div class="hidden md:block text-sm text-apple-darkgray">
+                    Play Premium Roguelike Games Online
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 md:px-8 py-8">
-        <section class="mb-12 text-center">
-            <h1>Fish Cat Survivors</h1>
-            <p class="text-xl md:text-2xl mb-8">An exciting underwater adventure where cats meet the ocean's challenges!</p>
-            
-            <div class="w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl border-4 border-apple-blue">
-                <iframe 
-                    src="https://html5.gamedistribution.com/f3083f5d56c94fde992dcae559c07541/" 
-                    width="100%" 
-                    height="768" 
-                    frameborder="0" 
-                    allow="fullscreen" 
-                    class="w-full"
-                    title="Play Fish Cat Survivors Online"
-                ></iframe>
-            </div>
-        </section>
-
-        <section class="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-                <h2>Game Overview</h2>
-                <p>Fish Cat Survivors puts you in the role of a brave cat navigating through a fish-filled world. Use your skills to overcome challenges, collect power-ups, and achieve the highest score possible!</p>
-                <p>This addictive game combines fast-paced action with strategic elements, making it perfect for gamers of all ages and skill levels.</p>
-            </div>
-            <div>
-                <h2>How to Play</h2>
-                <p>Use your keyboard or touch controls to move your cat character through the underwater world. Collect friendly fish for points while avoiding dangerous obstacles. Special power-ups will help you on your journey!</p>
-                <p>The longer you survive, the higher your score climbs. Can you beat your own high score or challenge your friends?</p>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2>Game Features</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Intuitive Controls</h3>
-                    <p>Simple yet responsive controls make the game easy to pick up but challenging to master.</p>
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar fixed md:static w-80 bg-white/90 backdrop-blur-md border-r border-apple-lightgray z-30 h-full overflow-y-auto">
+            <div class="p-6">
+                <h2 class="text-lg font-semibold text-apple-black mb-4">Game Collection</h2>
+                <nav class="space-y-2">
+                    <button class="sidebar-item active w-full text-left p-3 rounded-lg" data-game="fish-cat-survivors">
+                        <div class="font-medium">Fish Cat Survivors</div>
+                        <div class="text-sm text-apple-darkgray">Underwater survival adventure</div>
+                    </button>
+                    <button class="sidebar-item w-full text-left p-3 rounded-lg" data-game="dungeon-crawler">
+                        <div class="font-medium">Classic Dungeon Crawler</div>
+                        <div class="text-sm text-apple-darkgray">Traditional roguelike experience</div>
+                    </button>
+                    <button class="sidebar-item w-full text-left p-3 rounded-lg" data-game="pixel-kingdom">
+                        <div class="font-medium">Pixel Kingdom</div>
+                        <div class="text-sm text-apple-darkgray">Retro pixel art adventure</div>
+                    </button>
+                    <button class="sidebar-item w-full text-left p-3 rounded-lg" data-game="shadow-realms">
+                        <div class="font-medium">Shadow Realms</div>
+                        <div class="text-sm text-apple-darkgray">Dark fantasy exploration</div>
+                    </button>
+                    <button class="sidebar-item w-full text-left p-3 rounded-lg" data-game="crystal-caves">
+                        <div class="font-medium">Crystal Caves</div>
+                        <div class="text-sm text-apple-darkgray">Mining and exploration</div>
+                    </button>
+                </nav>
+                
+                <div class="mt-8">
+                    <h3 class="text-md font-semibold text-apple-black mb-3">Game Categories</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between p-2 text-sm">
+                            <span>Turn-based</span>
+                            <span class="bg-apple-blue text-white px-2 py-1 rounded-full text-xs">3</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2 text-sm">
+                            <span>Real-time</span>
+                            <span class="bg-apple-lightblue text-white px-2 py-1 rounded-full text-xs">2</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2 text-sm">
+                            <span>Survival</span>
+                            <span class="bg-apple-darkgray text-white px-2 py-1 rounded-full text-xs">4</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Beautiful Graphics</h3>
-                    <p>Dive into a colorful underwater world with charming characters and vibrant environments.</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 md:ml-0">
+            <!-- Game Display Area -->
+            <div id="game-content">
+                <!-- Fish Cat Survivors -->
+                <div class="game-section active" data-game="fish-cat-survivors">
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-bold text-apple-black mb-2">Fish Cat Survivors</h2>
+                        <p class="text-lg text-apple-darkgray">Navigate underwater challenges in this unique survival roguelike adventure.</p>
+                    </div>
+                    
+                    <div class="game-iframe mb-8">
+                        <iframe 
+                            src="https://html5.gamedistribution.com/f3083f5d56c94fde992dcae559c07541/" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0" 
+                            allow="fullscreen; autoplay" 
+                            allowfullscreen
+                            class="w-full rounded-lg">
+                        </iframe>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="game-card bg-white/80 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-3">Game Overview</h3>
+                            <p class="text-apple-darkgray mb-4">
+                                Fish Cat Survivors combines classic roguelike mechanics with a charming underwater setting. 
+                                Guide your feline hero through procedurally generated oceanic levels filled with challenges and treasures.
+                            </p>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><span class="text-apple-blue mr-2">•</span> Procedural level generation</li>
+                                <li class="flex items-center"><span class="text-apple-blue mr-2">•</span> Turn-based tactical combat</li>
+                                <li class="flex items-center"><span class="text-apple-blue mr-2">•</span> Character progression system</li>
+                                <li class="flex items-center"><span class="text-apple-blue mr-2">•</span> Multiple difficulty levels</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="game-card bg-white/80 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-3">How to Play</h3>
+                            <p class="text-apple-darkgray mb-4">
+                                Use keyboard controls to navigate through the underwater world. Each move counts in this 
+                                strategic roguelike where careful planning leads to survival.
+                            </p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Movement:</span>
+                                    <span class="text-apple-darkgray">Arrow Keys / WASD</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Action:</span>
+                                    <span class="text-apple-darkgray">Spacebar</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Inventory:</span>
+                                    <span class="text-apple-darkgray">I Key</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Pause:</span>
+                                    <span class="text-apple-darkgray">ESC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Progressive Difficulty</h3>
-                    <p>The game gradually becomes more challenging, keeping you engaged for hours.</p>
+
+                <!-- Other Games (Hidden by default) -->
+                <div class="game-section hidden" data-game="dungeon-crawler">
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-bold text-apple-black mb-2">Classic Dungeon Crawler</h2>
+                        <p class="text-lg text-apple-darkgray">Experience the pure essence of roguelike gaming with traditional dungeon exploration.</p>
+                    </div>
+                    
+                    <div class="game-iframe mb-8">
+                        <iframe 
+                            src="https://html-classic.itch.zone/html/5185382/index.html?v=1732313730" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0" 
+                            allow="fullscreen; autoplay" 
+                            allowfullscreen
+                            class="w-full rounded-lg">
+                        </iframe>
+                    </div>
+                    
+                    <div class="game-card bg-white/80 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3">Classic Roguelike Experience</h3>
+                        <p class="text-apple-darkgray">
+                            Dive into the roots of roguelike gaming with this traditional dungeon crawler. 
+                            Features ASCII graphics, complex character systems, and challenging gameplay that defined the genre.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-section hidden" data-game="pixel-kingdom">
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-bold text-apple-black mb-2">Pixel Kingdom</h2>
+                        <p class="text-lg text-apple-darkgray">Explore a vibrant pixel art kingdom with modern roguelike mechanics.</p>
+                    </div>
+                    
+                    <div class="bg-apple-lightgray rounded-lg p-8 text-center mb-8">
+                        <p class="text-apple-darkgray">Game loading... Coming soon!</p>
+                    </div>
+                    
+                    <div class="game-card bg-white/80 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3">Retro-Modern Adventure</h3>
+                        <p class="text-apple-darkgray">
+                            Combining nostalgic pixel art with modern game design, Pixel Kingdom offers 
+                            an accessible yet deep roguelike experience perfect for newcomers and veterans alike.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-section hidden" data-game="shadow-realms">
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-bold text-apple-black mb-2">Shadow Realms</h2>
+                        <p class="text-lg text-apple-darkgray">Enter dark fantasy realms where every shadow hides danger and opportunity.</p>
+                    </div>
+                    
+                    <div class="bg-apple-lightgray rounded-lg p-8 text-center mb-8">
+                        <p class="text-apple-darkgray">Game loading... Coming soon!</p>
+                    </div>
+                    
+                    <div class="game-card bg-white/80 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3">Dark Fantasy Adventure</h3>
+                        <p class="text-apple-darkgray">
+                            Explore haunting environments filled with mysterious creatures and ancient secrets. 
+                            Shadow Realms offers a mature take on roguelike gameplay with atmospheric storytelling.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-section hidden" data-game="crystal-caves">
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-bold text-apple-black mb-2">Crystal Caves</h2>
+                        <p class="text-lg text-apple-darkgray">Mine precious crystals while navigating dangerous underground caverns.</p>
+                    </div>
+                    
+                    <div class="bg-apple-lightgray rounded-lg p-8 text-center mb-8">
+                        <p class="text-apple-darkgray">Game loading... Coming soon!</p>
+                    </div>
+                    
+                    <div class="game-card bg-white/80 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3">Mining & Exploration</h3>
+                        <p class="text-apple-darkgray">
+                            Combine resource management with roguelike exploration in this unique mining adventure. 
+                            Discover rare crystals, avoid cave-ins, and build your underground empire.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <h2>Why Players Love Fish Cat Survivors</h2>
-            <p>Fish Cat Survivors has captured the hearts of players worldwide with its perfect blend of simple mechanics and addictive gameplay. The unique premise of a cat surviving in an underwater world creates a charming and unexpected gaming experience that stands out in the crowded online game space.</p>
-            <p>Whether you have a few minutes to spare or want to immerse yourself for hours, Fish Cat Survivors adapts to your gaming style. The game saves your progress automatically, allowing you to continue your adventure whenever you return.</p>
-            <p>Play Fish Cat Survivors on any device - it's fully optimized for both desktop and mobile gaming!</p>
-        </section>
-    </main>
+            <!-- Features Section -->
+            <section class="mt-12">
+                <h2 class="text-2xl font-bold text-apple-black mb-6">Why Choose Our Roguelike Collection?</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="game-card bg-white/80 p-6 rounded-lg">
+                        <div class="text-3xl mb-3">🎯</div>
+                        <h3 class="text-lg font-semibold mb-2">Curated Selection</h3>
+                        <p class="text-apple-darkgray text-sm">Hand-picked roguelike games that represent the best of the genre, from classic to modern interpretations.</p>
+                    </div>
+                    <div class="game-card bg-white/80 p-6 rounded-lg">
+                        <div class="text-3xl mb-3">🚀</div>
+                        <h3 class="text-lg font-semibold mb-2">Instant Play</h3>
+                        <p class="text-apple-darkgray text-sm">No downloads required. All games run directly in your browser with optimized performance.</p>
+                    </div>
+                    <div class="game-card bg-white/80 p-6 rounded-lg">
+                        <div class="text-3xl mb-3">📱</div>
+                        <h3 class="text-lg font-semibold mb-2">Cross-Platform</h3>
+                        <p class="text-apple-darkgray text-sm">Play on any device - desktop, tablet, or mobile. Responsive design ensures great experience everywhere.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
+    <!-- Footer -->
     <footer class="bg-apple-black text-white py-8">
-        <div class="container mx-auto px-4 md:px-8 text-center">
-            <p class="mb-2">&copy; 2023 Fish Cat Survivors. All rights reserved.</p>
-            <p class="text-apple-darkgray text-sm">The ultimate underwater cat adventure game</p>
-            <p class="text-sm mt-4">
-                <a href="#" class="text-apple-blue hover:underline mx-2">Privacy Policy</a>
-                <a href="#" class="text-apple-blue hover:underline mx-2">Terms of Service</a>
-                <a href="#" class="text-apple-blue hover:underline mx-2">Contact Us</a>
-            </p>
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Fish Cat Survivors - Roguelike Games Collection</h3>
+                    <p class="text-apple-darkgray text-sm">The ultimate destination for premium roguelike gaming experiences</p>
+                </div>
+                <div class="flex flex-wrap justify-center space-x-6 text-sm mb-4">
+                    <a href="#" class="text-apple-lightblue hover:text-white transition-colors">About</a>
+                    <a href="#" class="text-apple-lightblue hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-apple-lightblue hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-apple-lightblue hover:text-white transition-colors">Contact</a>
+                </div>
+                <p class="text-apple-darkgray text-xs">
+                    © 2024 Fish Cat Survivors. All rights reserved. | Roguelike games for everyone.
+                </p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Game switching functionality
+        const sidebarItems = document.querySelectorAll('.sidebar-item');
+        const gameSections = document.querySelectorAll('.game-section');
+        
+        sidebarItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const gameId = item.getAttribute('data-game');
+                
+                // Update active sidebar item
+                sidebarItems.forEach(si => si.classList.remove('active'));
+                item.classList.add('active');
+                
+                // Update active game section
+                gameSections.forEach(gs => {
+                    gs.classList.add('hidden');
+                    gs.classList.remove('active');
+                });
+                
+                const activeSection = document.querySelector(`.game-section[data-game="${gameId}"]`);
+                if (activeSection) {
+                    activeSection.classList.remove('hidden');
+                    activeSection.classList.add('active');
+                }
+                
+                // Close mobile menu
+                document.getElementById('sidebar').classList.remove('open');
+            });
+        });
+        
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+        
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth < 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                sidebar.classList.remove('open');
+            }
+        });
+        
+        // SEO and Analytics enhancements
+        document.addEventListener('DOMContentLoaded', () => {
+            // Track game interactions
+            gameSections.forEach(section => {
+                const iframe = section.querySelector('iframe');
+                if (iframe) {
+                    iframe.addEventListener('load', () => {
+                        const gameId = section.getAttribute('data-game');
+                        gtag('event', 'game_loaded', {
+                            'game_name': gameId,
+                            'event_category': 'roguelike_games'
+                        });
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
