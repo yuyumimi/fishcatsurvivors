@@ -27,11 +27,10 @@ This website hosts a curated collection of high-quality roguelike games, providi
 ## Game Collection
 
 Currently featuring:
-1. **Fish Cat Survivors** - Underwater survival adventure
-2. **Classic Dungeon Crawler** - Traditional roguelike experience
-3. **Pixel Kingdom** - Retro pixel art adventure
-4. **Shadow Realms** - Dark fantasy exploration
-5. **Crystal Caves** - Mining and exploration
+1. **Classic Dungeon Crawler** - Traditional roguelike experience
+2. **Pixel Kingdom** - Retro pixel art adventure
+3. **Shadow Realms** - Dark fantasy exploration
+4. **Crystal Caves** - Mining and exploration
 
 ## Project Structure
 
