@@ -31,7 +31,6 @@ Currently featuring:
 2. **Darkness Survivors** - Survive against endless waves of dark creatures
 3. **Monster Survivors** - Battle hordes of monsters in Unity-powered survival arena
 4. **Dragonsweeper** - Roguelike minesweeper with tactical depth and fantasy setting
-5. **10 Minutes Till Dawn** - Intense bullet-hell survival shooter with roguelike progression
 
 ## Project Structure
 
